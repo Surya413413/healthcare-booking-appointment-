@@ -1,0 +1,458 @@
+/* Full width override for all containers */
+.container {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Hero Section - Full Width */
+.hero-section {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.hero-section .container {
+  max-width: none !important;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative;
+  max-width: 600px; /* Increased for full screen */
+  margin: 0 auto;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Doctors Section - Full Width */
+.doctors-section {
+  padding: 0;
+  width: 100%;
+}
+
+.doctors-section .container {
+  max-width: none !important;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.doctors-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+/* Doctor Cards - Full Width Grid */
+.doctor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Increased card size */
+  gap: 2rem;
+  padding: 0;
+  width: 100%;
+  max-width: none !important;
+}
+
+.doctor-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+   /* border: red solid 3px; */
+   margin-bottom: 45px;
+}
+
+.doctor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.doctor-image-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.doctor-image {
+  width: 100%;
+  height: 220px; /* Increased height for larger cards */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.availability-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.availability-badge.available {
+  background: #28a745;
+  color: white;
+}
+
+.availability-badge.fully-booked {
+  background: #ffc107;
+  color: #212529;
+}
+
+.availability-badge.on-leave {
+  background: #dc3545;
+  color: white;
+}
+
+.doctor-name {
+  font-size: 1.4rem; /* Increased font size */
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.doctor-specialization {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 1.1rem; /* Increased font size */
+}
+
+.doctor-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem; /* Increased font size */
+}
+
+.rating {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.experience {
+  color: #666;
+}
+
+.fees {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Doctor Profile - Full Width */
+.doctor-profile {
+  max-width: none; /* Remove max-width constraint */
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.profile-header {
+  display: flex;
+  gap: 3rem; /* Increased gap */
+  margin-bottom: 2rem;
+  background: white;
+  padding: 3rem; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.profile-image {
+  width: 250px; /* Increased size */
+  height: 250px; /* Increased size */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.profile-specialization {
+  font-size: 1.3rem; /* Increased font size */
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.profile-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 1.1rem; /* Increased font size */
+}
+
+.profile-content {
+  margin-bottom: 2rem;
+}
+
+.profile-section {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.profile-section h3 {
+  color: #007bff;
+  border-bottom: 2px solid #f8f9fa;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem; /* Increased font size */
+  
+}
+
+/* Schedule Grid - Full Width */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Increased min width */
+  gap: 1.5rem; /* Increased gap */
+  width: 100%;
+}
+
+.schedule-day {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem; /* Increased padding */
+}
+
+.schedule-day h4 {
+  margin-bottom: 0.75rem;
+  color: #495057;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.time-slot {
+  padding: 0.4rem 1rem; /* Increased padding */
+  background: #e7f3ff;
+  color: #0056b3;
+  border-radius: 15px;
+  font-size: 0.9rem; /* Increased font size */
+  font-weight: 500;
+}
+
+.no-slots {
+  color: #6c757d;
+  font-style: italic;
+  font-size: 1rem; /* Increased font size */
+}
+
+/* Profile Actions */
+.profile-actions {
+  text-align: center;
+  width: 100%;
+}
+
+.book-appointment-btn {
+  background: #28a745;
+  color: white;
+  padding: 1.2rem 4rem; /* Increased padding */
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 15px;
+  
+}
+
+.book-appointment-btn:hover:not(:disabled) {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.book-appointment-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Appointment Form - Full Width */
+.appointment-form-container {
+  max-width: 800px; /* Increased max-width */
+  margin: 0 auto;
+  background: white;
+  padding: 3rem; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: calc(100% - 4rem);
+  
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 2rem; /* Increased font size */
+}
+
+.doctor-info {
+  color: #666;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.appointment-form {
+  margin-top: 2rem;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 1.2rem; /* Increased padding */
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+/* Appointment Confirmation - Full Width */
+.appointment-confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.confirmation-card {
+  background: white;
+  padding: 4rem 3rem; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 600px; /* Increased max-width */
+  width: 100%;
+}
+
+.success-icon {
+  font-size: 5rem; /* Increased size */
+  margin-bottom: 1rem;
+}
+
+.confirmation-card h2 {
+  color: #28a745;
+  margin-bottom: 2rem;
+  font-size: 2.2rem; /* Increased font size */
+}
+
+.appointment-details {
+  background: #f8f9fa;
+  padding: 2rem; /* Increased padding */
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  text-align: left;
+ 
+}
+
+.appointment-details p {
+  margin-bottom: 0.7rem; /* Increased margin */
+  font-size: 1.1rem; /* Increased font size */
+}
+
+.confirmation-message {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem; /* Increased font size */
+}
+
+.back-home-btn {
+  background: #007bff;
+  color: white;
+  padding: 1rem 3rem; /* Increased padding */
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1.1rem; /* Increased font size */
+}
+
+.back-home-btn:hover {
+  background: #0056b3;
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 4rem; /* Increased padding */
+  color: #666;
+  width: 100%;
+}
+
+.no-results p {
+  font-size: 1.3rem; /* Increased font size */
+}
+
+/* Home Page Full Width */
+.home-page {
+  width: 100%;
+}
+
