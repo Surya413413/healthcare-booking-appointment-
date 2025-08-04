@@ -61,13 +61,13 @@ src/
 ### Installation
 
 1. **Clone the repository**
-git clone https://github.com/yourusername/nirogyan-appointment-system.git
+git clone https://github.com/Surya413413/healthcare-booking-appointment-.git
 cd nirogyan-appointment-system
-2. **Install dependencies**
+3. **Install dependencies**
 npm install
-3. **Start the development server**
+4. **Start the development server**
 npm start
-4. **Open your browser**
+5. **Open your browser**
 Navigate to `http://localhost:3000`
 
 ### Building for Production
